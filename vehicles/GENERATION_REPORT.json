@@ -1,0 +1,127 @@
+[
+  {
+    "id": "HV-S01",
+    "architecture": "front-mid engine grand tourer",
+    "geometry_parts": 32,
+    "triangles": 85912,
+    "vertices": 46771,
+    "bytes": 1241004,
+    "sha256": "a1d91c23192e6b4325c411654c2d910ba9a68a8ff49e15a50c9296390d0878a4",
+    "bounds_m": [
+      [
+        -2.3479983806610107,
+        -1.095900058746338,
+        -0.006998393684625626
+      ],
+      [
+        2.3324999809265137,
+        1.095900058746338,
+        1.2730183601379395
+      ]
+    ],
+    "production_status": "prototype_geometry_only",
+    "authorship": "authored by procedural Python generator for Helvetia; no sourced car meshes or brand assets",
+    "commercial_legal_status": "requires independent review for design similarity and trademark/name clearance",
+    "visual_qa": "not photorealism-certified; verify geometry, engine placement, glass, wheel collision and PBR in Blender/Unreal"
+  },
+  {
+    "id": "HV-S02",
+    "architecture": "mid engine two-seat supercar",
+    "geometry_parts": 32,
+    "triangles": 84708,
+    "vertices": 46097,
+    "bytes": 1218788,
+    "sha256": "0bf3bac496693921e9b3ee1ec312b9563a2f8a8f0bfdb58a5380a642217506ca",
+    "bounds_m": [
+      [
+        -2.256999969482422,
+        -1.1203999519348145,
+        -0.014406976290047169
+      ],
+      [
+        2.247499942779541,
+        1.1203999519348145,
+        1.178491234779358
+      ]
+    ],
+    "production_status": "prototype_geometry_only",
+    "authorship": "authored by procedural Python generator for Helvetia; no sourced car meshes or brand assets",
+    "commercial_legal_status": "requires independent review for design similarity and trademark/name clearance",
+    "visual_qa": "not photorealism-certified; verify geometry, engine placement, glass, wheel collision and PBR in Blender/Unreal"
+  },
+  {
+    "id": "HV-S03",
+    "architecture": "front-engine lightweight open roadster",
+    "geometry_parts": 31,
+    "triangles": 76636,
+    "vertices": 41560,
+    "bytes": 1066652,
+    "sha256": "4957efde7938f45c5c27dfb3caa9bf9812b0c4801aa530a840c8ff8b061cbce8",
+    "bounds_m": [
+      [
+        -2.128000020980835,
+        -1.0566999912261963,
+        -0.006998393684625626
+      ],
+      [
+        2.1075000762939453,
+        1.0566999912261963,
+        1.1769204139709473
+      ]
+    ],
+    "production_status": "prototype_geometry_only",
+    "authorship": "authored by procedural Python generator for Helvetia; no sourced car meshes or brand assets",
+    "commercial_legal_status": "requires independent review for design similarity and trademark/name clearance",
+    "visual_qa": "not photorealism-certified; verify geometry, engine placement, glass, wheel collision and PBR in Blender/Unreal"
+  },
+  {
+    "id": "HV-S04",
+    "architecture": "battery electric 2+2 fastback",
+    "geometry_parts": 34,
+    "triangles": 84268,
+    "vertices": 45905,
+    "bytes": 1212408,
+    "sha256": "5042d8f820939af29501be1125452b8cd7c2576c6f854d1df68f440526be00d6",
+    "bounds_m": [
+      [
+        -2.4649999141693115,
+        -1.1105999946594238,
+        -0.007061046548187733
+      ],
+      [
+        2.387500047683716,
+        1.1105999946594238,
+        1.2928828001022339
+      ]
+    ],
+    "production_status": "prototype_geometry_only",
+    "authorship": "authored by procedural Python generator for Helvetia; no sourced car meshes or brand assets",
+    "commercial_legal_status": "requires independent review for design similarity and trademark/name clearance",
+    "visual_qa": "not photorealism-certified; verify geometry, engine placement, glass, wheel collision and PBR in Blender/Unreal"
+  },
+  {
+    "id": "HV-S05",
+    "architecture": "mid-engine lightweight track coupe",
+    "geometry_parts": 32,
+    "triangles": 84556,
+    "vertices": 46135,
+    "bytes": 1216528,
+    "sha256": "936597d605715b2b7dcd7eabb334f6930afa4ec3f6721ebf81c5946a75d39d35",
+    "bounds_m": [
+      [
+        -2.1635000705718994,
+        -1.090999960899353,
+        -0.01334011647850275
+      ],
+      [
+        2.2769999504089355,
+        1.090999960899353,
+        1.2112820148468018
+      ]
+    ],
+    "production_status": "prototype_geometry_only",
+    "authorship": "authored by procedural Python generator for Helvetia; no sourced car meshes or brand assets",
+    "commercial_legal_status": "requires independent review for design similarity and trademark/name clearance",
+    "visual_qa": "not photorealism-certified; verify geometry, engine placement, glass, wheel collision and PBR in Blender/Unreal"
+  }
+]
