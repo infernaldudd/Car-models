@@ -1,6 +1,20 @@
 # Car Models
 
-> **Production quality gate:** Only photorealistic, independently rights-verified assets are suitable for Helvetia. Existing stylized Macan Kaban and procedural Borsche 911 are not accepted as production assets. See [Porsche SUV photorealism tracker](PORSCHE_SUV_ASSET_TRACKER.md). No Cayenne or Macan SUV is currently approved for the game.
+## Current release direction — original fictional vehicles
+
+**Helvetia / GundeliTheftAuto has selected independent original car designs rather than lookalikes of Porsche or other commercial manufacturers.**
+
+- [Original-vehicle legal / quality / source policy](ORIGINAL_VEHICLE_RIGHTS_POLICY.md)
+- [Five original sports-car design briefs](original_vehicles/SPORTS_BATCH_01.md)
+- [Original vehicle manifest — all currently concepts, zero approved](original_vehicles/manifest.json)
+
+**RELEASE WARNING:** Existing Porsche-sourced GLBs in `third_party/`, the procedural `Borsche_911_1981/` and earlier `BATCHES/` content are **legacy research only, blocked from distribution as game vehicles**. No car assets in this repository are currently cleared for a commercial Helvetia release. Third-party media must not be included in a build merely because a Creative Commons or other license allows commercial mesh use. Porsche branding and vehicle-design issues require separate review.
+
+> Legacy files remain publicly present; they have NOT been deleted, made private, or legally cleared. Public hosting itself should be reviewed and addressed.
+
+---
+
+## Historical asset experiments (not approved for release)
 
 Original game-ready car assets for the GundeliTheftAuto / Helvetia projects.
 
