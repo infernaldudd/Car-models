@@ -1,0 +1,61 @@
+name: Build five original Helvetia cars
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/build-original-cars.yml"
+      - "src/build_original_cars.py"
+      - "requirements.txt"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install 3D geometry dependencies
+        run: pip install -r requirements.txt
+      - name: Generate five distinct car GLBs
+        run: python src/build_original_cars.py
+      - name: Verify all five exports, integrity and legal-status metadata
+        run: |
+          python - <<'PY'
+          import hashlib,json,struct
+          from pathlib import Path
+          output=Path("src/models")
+          report=json.loads((output/"GENERATION_REPORT.json").read_text())
+          ids={f"HV-S0{n}" for n in range(1,6)}
+          assert len(report)==5 and {x["id"] for x in report}==ids
+          for info in report:
+              model=output/(info["id"]+".glb")
+              b=model.read_bytes()
+              magic,version,size=struct.unpack("<4sII",b[:12])
+              assert (magic,version,size)==(b"glTF",2,len(b))
+              assert hashlib.sha256(b).hexdigest()==info["sha256"]
+              assert info["triangles"]>50000
+              assert info["production_status"]=="prototype_geometry_only"
+              assert info["commercial_legal_status"].startswith("requires independent review")
+              print(info["id"],info["triangles"],info["geometry_parts"],len(b))
+          PY
+      - name: Publish generated prototype files to repository
+        run: |
+          mkdir -p vehicles
+          cp src/models/HV-S0*.glb vehicles/
+          cp src/models/GENERATION_REPORT.json vehicles/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vehicles/
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate five original fictional sports car prototype GLBs"
+            git push
+          fi
