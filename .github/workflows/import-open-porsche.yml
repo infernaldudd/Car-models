@@ -1,6 +1,9 @@
 name: Import open-license vintage 911 reference mesh
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/import-open-porsche.yml'
 permissions:
   contents: write
 jobs:
