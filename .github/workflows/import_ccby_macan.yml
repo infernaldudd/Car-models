@@ -1,0 +1,61 @@
+name: Import CC-BY artist-authored Macan SUV
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/import_ccby_macan.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Fetch pinned GLB from commercial-friendly source library
+        run: |
+          set -euo pipefail
+          SRC="https://raw.githubusercontent.com/pedrosoandre/carros/2d18dfd9db96bbf0d9cffa949deaf7f571388cbf/assets/porsche-macan.glb"
+          OUT="third_party/Porsche_Macan_Kaban/Porsche_Macan_Kaban_CC_BY.glb"
+          mkdir -p "$(dirname "$OUT")"
+          curl -fsSL --retry 3 --connect-timeout 20 --max-time 120 "$SRC" -o "$OUT"
+          [ "$(wc -c < "$OUT")" -eq 2068980 ]
+          [ "$(git hash-object "$OUT")" = "c3179c55d5afbf26a2b8379d810987055dec3247" ]
+
+      - name: Verify GLB structure, embedded data, and mesh presence
+        run: |
+          python - <<'PY'
+          import json, struct
+          from pathlib import Path
+          p=Path("third_party/Porsche_Macan_Kaban/Porsche_Macan_Kaban_CC_BY.glb")
+          b=p.read_bytes()
+          magic,version,size=struct.unpack_from("<4sII",b,0)
+          assert magic==b"glTF" and version==2 and size==len(b), (magic,version,size,len(b))
+          n,typ=struct.unpack_from("<I4s",b,12)
+          assert typ==b"JSON"
+          g=json.loads(b[20:20+n].decode("utf-8"))
+          assert g.get("asset",{}).get("version")=="2.0"
+          assert g.get("meshes"), "No mesh found"
+          assert len(b)>20000
+          print("Validated GLB bytes:",len(b))
+          print("Meshes:",len(g["meshes"]))
+          print("Nodes:",len(g.get("nodes",[])))
+          print("Materials:",len(g.get("materials",[])))
+          print("Extensions:",g.get("extensionsUsed",[]))
+          PY
+
+      - name: Commit licensed mesh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add third_party/Porsche_Macan_Kaban/Porsche_Macan_Kaban_CC_BY.glb
+          if ! git diff --cached --quiet; then
+            git commit -m "Import attributed CC BY stylized Macan SUV from pinned public source"
+            git push
+          fi
