@@ -1,0 +1,73 @@
+{
+  "created": "2026-10-28",
+  "project": "Helvetia/GundeliTheftAuto",
+  "upstream_source_repo": "pedrosoandre/carros",
+  "upstream_commit": "2d18dfd9db96bbf0d9cffa949deaf7f571388cbf",
+  "models": [
+    {
+      "folder": "Porsche_911_Carrera_4S_Lionsharp",
+      "source_file": "porsche-911-carrera.glb",
+      "sha": "0dd61483573812952f580d85d42ce6ea91d65f86",
+      "size": 4223360,
+      "artist": "Lionsharp Studios",
+      "url": "https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf",
+      "license": "CC BY-SA 4.0",
+      "notes": "web-configurator model by originating vehicle design studio; solid source",
+      "source_repo": "https://github.com/pedrosoandre/carros",
+      "source_commit": "2d18dfd9db96bbf0d9cffa949deaf7f571388cbf",
+      "source_model": "Sketchfab CC"
+    },
+    {
+      "folder": "Porsche_911_GT3_ChevroletSS",
+      "source_file": "porsche-911-gt3.glb",
+      "sha": "a8b2ef3754c13be02d8d71676de6a06ec60a50cc",
+      "size": 1310556,
+      "artist": "ChevroletSS",
+      "url": "https://sketchfab.com/3d-models/porsche-911-gt3-78d5c47ab2554c2592b7e499179a0792",
+      "license": "CC BY 4.0",
+      "notes": "creator calls it their first Sketchfab model and acknowledges modest materials; body + interior",
+      "source_repo": "https://github.com/pedrosoandre/carros",
+      "source_commit": "2d18dfd9db96bbf0d9cffa949deaf7f571388cbf",
+      "source_model": "Sketchfab CC"
+    },
+    {
+      "folder": "Porsche_911_C4S_2020_JK3D",
+      "source_file": "porsche-911-c4s.glb",
+      "sha": "c47e63747c1320a24f427e0130c117153b42960e",
+      "size": 1618524,
+      "artist": "JK3Dstudios",
+      "url": "https://sketchfab.com/3d-models/porsche-911-c4s-2020-aerokit-ee69c474a1cc4085944cde4cb7ae87db",
+      "license": "CC BY 4.0",
+      "notes": "uploader calls it 'my work'; materials and geometry to inspect",
+      "source_repo": "https://github.com/pedrosoandre/carros",
+      "source_commit": "2d18dfd9db96bbf0d9cffa949deaf7f571388cbf",
+      "source_model": "Sketchfab CC"
+    },
+    {
+      "folder": "Porsche_959_Yakpower",
+      "source_file": "porsche-959.glb",
+      "sha": "9c262ae0b9e56cf95f4ce8f41e595b64b641433e",
+      "size": 7668068,
+      "artist": "Yakpower",
+      "url": "https://sketchfab.com/3d-models/porsche-959-0530aa8fa4b74427a71c961a5bdd7087",
+      "license": "CC BY-SA 4.0",
+      "notes": "creator describes Fusion 360 modeling and Substance Painter texturing",
+      "source_repo": "https://github.com/pedrosoandre/carros",
+      "source_commit": "2d18dfd9db96bbf0d9cffa949deaf7f571388cbf",
+      "source_model": "Sketchfab CC"
+    },
+    {
+      "folder": "Porsche_911_GT2_RS_COOL601",
+      "source_file": "porsche-911-gt2.glb",
+      "sha": "4cffa5b8432429fd5a2e5951cfeda0089eed4a00",
+      "size": 6778268,
+      "artist": "COOL601",
+      "url": "https://sketchfab.com/3d-models/porsche-911-gt2-rs-with-angle-eyes-41419345868e406eaec8a271e33de3c1",
+      "license": "CC BY 4.0",
+      "notes": "uploader calls free rigged model and requests credits; full ownership requires further confirmation",
+      "source_repo": "https://github.com/pedrosoandre/carros",
+      "source_commit": "2d18dfd9db96bbf0d9cffa949deaf7f571388cbf",
+      "source_model": "Sketchfab CC"
+    }
+  ]
+}
