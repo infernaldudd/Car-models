@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "project": "Helvetia / GundeliTheftAuto",
+  "strategy": "original fictional vehicles only",
+  "release_approved_count": 0,
+  "release_folder": "original_vehicles/",
+  "prohibited_source_folders": [
+    "third_party/",
+    "Borsche_911_1981/",
+    "BATCHES/"
+  ],
+  "items": [
+    {
+      "id": "HV-S01",
+      "architecture": "front-mid engine 2+2 grand tourer",
+      "status": "concept_only",
+      "glb": null,
+      "legal_review": "pending",
+      "quality_review": "pending"
+    },
+    {
+      "id": "HV-S02",
+      "architecture": "mid-engine two-seat coupe",
+      "status": "concept_only",
+      "glb": null,
+      "legal_review": "pending",
+      "quality_review": "pending"
+    },
+    {
+      "id": "HV-S03",
+      "architecture": "front-engine open roadster",
+      "status": "concept_only",
+      "glb": null,
+      "legal_review": "pending",
+      "quality_review": "pending"
+    },
+    {
+      "id": "HV-S04",
+      "architecture": "battery-electric 2+2 fastback",
+      "status": "concept_only",
+      "glb": null,
+      "legal_review": "pending",
+      "quality_review": "pending"
+    },
+    {
+      "id": "HV-S05",
+      "architecture": "lightweight mid-engine track coupe",
+      "status": "concept_only",
+      "glb": null,
+      "legal_review": "pending",
+      "quality_review": "pending"
+    }
+  ]
+}
