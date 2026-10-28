@@ -1,0 +1,26 @@
+name: Original vehicle release gate
+
+on:
+  push:
+    paths:
+      - "original_vehicles/**"
+      - "scripts/package_original_vehicles.py"
+      - "ORIGINAL_VEHICLE_RIGHTS_POLICY.md"
+      - ".github/workflows/original-vehicle-release-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate_manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Ensure every listed released asset has rights evidence, hashes and approvals
+        run: python scripts/package_original_vehicles.py --check
+      - name: Report release status
+        run: echo "This gate checks manifest metadata. It cannot replace legal assessment or Unreal release integration."
