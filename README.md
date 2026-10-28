@@ -1,5 +1,7 @@
 # Car Models
 
+> **Production quality gate:** Only photorealistic, independently rights-verified assets are suitable for Helvetia. Existing stylized Macan Kaban and procedural Borsche 911 are not accepted as production assets. See [Porsche SUV photorealism tracker](PORSCHE_SUV_ASSET_TRACKER.md). No Cayenne or Macan SUV is currently approved for the game.
+
 Original game-ready car assets for the GundeliTheftAuto / Helvetia projects.
 
 ## Models
