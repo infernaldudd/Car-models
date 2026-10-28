@@ -4,6 +4,12 @@
 
 Original game-ready car assets for the GundeliTheftAuto / Helvetia projects.
 
+## Licensed sports-car sources — Batch 02 (5 GLBs)
+
+[Browse five imported sports-car models and attribution](third_party/Sports_Batch_02/) · [Geometry validation](third_party/Sports_Batch_02/VALIDATION.json)
+
+Five independently sourced Porsche sports-car meshes with original artist listings under **CC BY 4.0** or **CC BY-SA 4.0**. The GLBs have had upstream Meshopt compression removed for easier Unreal/Blender import. File integrity and structure are verified; **photorealism, parts gaps, interior and Porsche-logo/design rights are not yet cleared for final game shipping**. Keep [attribution and license notes](third_party/Sports_Batch_02/README.md) with the game's credits.
+
 ## Models
 
 ### Borsche 911 1981 — Smooth
