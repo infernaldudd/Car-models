@@ -1,40 +1,42 @@
-# Porsche SUV Asset Tracker — Commercial-Use Sources
+# Porsche SUV photorealism and commercial clearance tracker
 
-**Updated:** 2026-10-28. Two Porsche SUV families: Macan and Cayenne.
+Updated 28 October 2026.
 
-Commercially usable 3D asset means: valid original author / rights provenance, an explicitly commercial license, permission to **redistribute raw mesh files** in this public repo, attribution, and separate review of vehicle design/trademark restrictions. **CC BY or a free download label alone is not proof of ownership.**
+## Accepted for Helvetia / GundeliTheftAuto
 
-## Imported
+**None yet.** A model is accepted only once its actual exported mesh is inspected from multiple directions, matched against real photo references, checked for textures and accurate proportions, and cleared for commercial game use. For public GitHub storage, raw-asset redistribution must also be permitted by the original artist.
 
-| Family | Variant | Source artist | License | Format | Quality | Notes |
-|---|---|---|---|---|---|---|
-| Macan | Kaban custom | [animanyarty](https://sketchfab.com/3d-models/porsche-macan-kaban-5d57f6dcabe7473f91b160595a3eb0cc) | CC BY 4.0 (artist listing) | [GLB](third_party/Porsche_Macan_Kaban/Porsche_Macan_Kaban_CC_BY.glb) | Stylized, non-photorealistic | Author claims original art; compressed version from André Pedroso's CC-licensed car library; source and modifications credited |
+## Realistic candidates to acquire and inspect
 
-## Candidate, not yet imported
+| Priority | Vehicle | Original source | License claimed | Evidence | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Cayenne Turbo 955, 2005 | [CCamo / nicocarmo05 — game-ready PBR](https://sketchfab.com/3d-models/game-ready-pbr-porsche-cayenne-turbo-2005-0c21727cc75e4ecbb39c4eb5c78991ad) | CC BY | Artist describes realistic proportions, real-world scale, PBR materials, clean topology and separated body, wheels, doors, cabin; 28k triangles. Exterior quality not independently inspected yet. | **Candidate, no raw upload**; official download requires accessible Sketchfab session |
+| 2 | Cayenne 2019 | [Mona x Supercars — Cayenne](https://sketchfab.com/3d-models/porsche-cayenne-d1fd357faf314607afc39a67d5b4f4f1) | CC BY | 985.5k triangles; listing specifies year and detailed finish. The mesh origin is **not established**. | **HOLD: prove author ownership** |
+| 3 | Macan Turbo | [Nieve5677 — Macan Turbo](https://sketchfab.com/3d-models/porsche-macan-turbo-6ec30e99fc3d4b42b5eea0d77edc74ad) | CC BY | 391.3k triangles. Uploader provides no provenance or process description. | **HOLD: prove authorship and inspect mesh** |
+| 4 | Macan with HQ interior | [Nieve5677 — Macan HQ](https://sketchfab.com/3d-models/porsche-macan-with-hq-interior-2eaf5997e49445db938643e298fec98c) | CC BY | 2.3M triangles, interior indicated; uploader provides no provenance. Big mesh does not equal realism. | **HOLD: prove authorship and inspect mesh** |
 
-| Family | Variant | Model | Listed license | Why pending |
-|---|---|---|---|---|
-| Cayenne 955 | Turbo 2005 | [CCamo game-ready PBR, 28k triangles](https://sketchfab.com/3d-models/game-ready-pbr-porsche-cayenne-turbo-2005-0c21727cc75e4ecbb39c4eb5c78991ad) | CC BY | Good game-ready candidate, but authenticated original download not accessible to import; verify rights to all textures, then import with creator credits |
-| Cayenne 9Y0 | 2019 | [Mona x Supercars, 985k triangles](https://sketchfab.com/3d-models/porsche-cayenne-d1fd357faf314607afc39a67d5b4f4f1) | CC BY | Authorship/provenance uncertain, very high geometry count |
-| Macan | Turbo | [Nieve5677, 391k triangles](https://sketchfab.com/3d-models/porsche-macan-turbo-6ec30e99fc3d4b42b5eea0d77edc74ad) | CC BY | No author or modeling process description; needs ownership verification |
-| Macan | HQ Interior | [Nieve5677, 2.3M triangles](https://sketchfab.com/3d-models/porsche-macan-with-hq-interior-2eaf5997e49445db938643e298fec98c) | CC BY | No provenance description; far above practical game polycount |
+## Existing files not approved
 
-## Explicitly excluded
+- `third_party/Porsche_Macan_Kaban/Porsche_Macan_Kaban_CC_BY.glb` is **REJECTED FOR HELVETIA**. It is a stylized/custom Macan, not photorealistic. Retained only as an existing raw source, and must not be added to the game, the realistic car shortlist, or marketing screenshots.
+- `Borsche_911_1981` procedural body is also not accepted as a faithful, photorealistic 1981 911 replica.
 
-| Family | Version | Reason |
-|---|---|---|
-| Cayenne | 2022 Turbo GT by Ddiaz | Claimed CC BY, but uploader discloses **CSR2** source: commercial game-ripped provenance, not independently cleared |
-| Cayenne | 2016 Turbo S by Ddiaz | Uploader discloses Need for Speed Edge/Online mesh |
-| Cayenne | 2020 Turbo Coupe by Ddiaz | CC BY-NC-SA, Need for Speed Mobile mesh |
-| Macan | 2017 GTS by Ddiaz | Game-ripped Need for Speed Edge/Online |
-| Macan | 2019 Turbo by Ddiaz | CC BY-NC-SA, Forza Customs mesh |
-| Macan | 2022 GTS by Ddiaz | CC BY-NC-SA, Racing Master mesh |
+## Do not import
 
-## Next vehicles to cover
+- Models extracted from CSR2, Forza, Need for Speed, Racing Master, Assetto Corsa, etc., absent a **real, independently verified right from the original game's rights holder**. A reuploader cannot grant a valid CC license for third-party game assets.
+- Sketchfab 'NonCommercial' models.
+- 'Editorial use only' models for a commercially sold open-world game.
+- Marketplace 'royalty free' assets into **public GitHub raw folders** unless the publisher also expressly permits raw redistribution. Commercial in-game use is a different permission.
 
-- Cayenne 955/957 (2002–2010), Cayenne 958 (2010–2017), Cayenne 9Y0/9YA/9YB (2017+), Cayenne Coupé, Cayenne Electric.
-- Macan 95B (2014–2024) base, S, GTS, Turbo; Macan Electric (2024+) in appropriate variants.
+## Required acceptance gates (all must pass)
 
-**Game-ready QA before release:** scale, topology, no detached floating parts, normal orientation, UV/PBR map integrity, identifiable cabin, collision geometry, wheel pivots, functional doors/engine bay when specified, 4 LODs, 3D import test, license verification, and in-game credits.
+1. Distinctive body shape accurately matches the real vehicle: front/rear silhouettes, headlights, roof, beltline, wheelbase, track, windows, side panels, wheels, tail lamps.
+2. **No cartoon/stylized reinterpretations**: credible photo realism, real materials, sensible normals and UVs, sufficiently detailed cockpit.
+3. No floating panels, open cracks, randomly missing sections, unintentional intersections, or black voids; intentional seams, doors, windows and wheel wells remain modeled.
+4. Realistic PBR layers: paint clearcoat, glass, metal, rubber, plastics, lights, interior materials; intact maps and UVs.
+5. Vehicle scale and 4+ directional checks in a 3D viewer, plus side-by-side real photo references.
+6. Original source creator provenance and the exact license of all meshes, decals and materials documented; original proper attribution preserved.
+7. Commercial use and **public raw-asset redistribution** independently cleared. Porsche logo, brand/trade dress and vehicle-design rights separately reviewed; fictional rebranding does not automatically erase rights issues.
+8. Importable GLB/FBX/OBJ for Unreal Engine 5.7, sensible scene hierarchy, separated rotating wheels, LOD planning and collision notes.
+9. Exact exported file checked; no upload of README-only candidates as if they were finished car files.
 
-**Important:** The artist's Creative Commons mesh license does not itself authorize the use of Porsche trademarks or guarantee absence of third-party vehicle-design rights. Consider original fictional branding for commercial Helvetia builds.
+Only mark an asset APPROVED once all conditions are tested. No fake quality scores.
